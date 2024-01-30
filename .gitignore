@@ -1,0 +1,35 @@
+# Generated files by hugo
+/public/*
+/resources/_gen/
+
+# Track changes in redirects for Cloudflare Pages
+# https://developers.cloudflare.com/pages/platform/redirects/
+!/public/_redirects
+
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# Temporary lock file while building
+/.hugo_build.lock
+
+# Dependency directories
+node_modules
+
+# OS - Mac
+.DS_Store
+
+# .idea folder
+.idea
+
+# Logs
+logs
+*.log
+
+# Temporary files
+.cache
+.tmp
+.cache
+.sass-cache
+
