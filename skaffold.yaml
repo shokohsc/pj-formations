@@ -1,0 +1,97 @@
+apiVersion: skaffold/v2beta28
+kind: Config
+metadata:
+  name: pj-formations
+build:
+  artifacts:
+  - image: shokohsc/pj-formations
+    context: .
+    sync:
+      manual:
+      - src: src/**/*.js
+        dest: .
+      - src: src/**/*.ts
+        dest: .
+      - src: src/**/*.vue
+        dest: .
+      - src: src/**/*.md
+        dest: .
+    docker:
+      dockerfile: Dockerfile.dev
+deploy:
+  kustomize:
+    paths:
+    - k8s/base
+profiles:
+- name: dev
+  activation:
+  - command: dev
+  build:
+    artifacts:
+    - image: shokohsc/pj-formations
+      sync:
+        manual:
+        - src: src/**/*.js
+          dest: .
+        - src: src/**/*.ts
+          dest: .
+        - src: src/**/*.vue
+          dest: .
+        - src: src/**/*.md
+          dest: .
+- name: shokohsc
+  build:
+    artifacts:
+    - image: shokohsc/pj-formations
+      sync:
+        manual:
+        - src: src/**/*.js
+          dest: .
+        - src: src/**/*.ts
+          dest: .
+        - src: src/**/*.vue
+          dest: .
+        - src: src/**/*.md
+          dest: .
+      kaniko:
+        useNewRun: true
+        cache:
+          repo: shokohsc/pj-formations
+        dockerfile: Dockerfile.dev
+    cluster:
+      dockerConfig:
+        secretName: kaniko-secret
+      namespace: kaniko
+      pullSecretName: kaniko-secret
+      resources:
+        limits:
+          cpu: "2"
+          memory: 2Gi
+        requests:
+          cpu: "1"
+          memory: 1Gi
+  deploy:
+    kustomize:
+      paths:
+      - k8s/overlays/shokohsc
+- name: prod
+  build:
+    artifacts:
+    - image: shokohsc/pj-formations
+      kaniko:
+        useNewRun: true
+        cache:
+          repo: shokohsc/pj-formations
+        dockerfile: Dockerfile
+    cluster:
+      dockerConfig:
+        secretName: kaniko-secret
+      namespace: kaniko
+      pullSecretName: kaniko-secret
+      resources:
+        limits:
+          cpu: "2"
+          memory: 2Gi
+        requests:
+          cpu: "1"
+          memory: 1Gi
