@@ -1,6 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: dev-pj-formations
+namespace: dev-pj-recrutement-et-conseil
 resources:
   - browser-sync/
 bases:

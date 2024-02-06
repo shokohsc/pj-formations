@@ -21,12 +21,12 @@ module.exports = {
   watch: false,
   https: false,
   proxy: {
-    target: "pj-formations.dev-pj-formations:80",
+    target: "pj-recrutement-et-conseil.dev-pj-recrutement-et-conseil:80",
     ws: true
   },
   cors: true,
   port: 3000,
-  logPrefix: "pj-formations",
+  logPrefix: "pj-recrutement-et-conseil",
   logLevel: "debug",
   logConnections: true,
   socket: {

@@ -2,9 +2,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: pj-formations
+  name: pj-recrutement-et-conseil
   labels:
-    app: pj-formations
+    app: pj-recrutement-et-conseil
 spec:
   type: ClusterIP
   ports:
@@ -13,4 +13,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app: pj-formations
+    app: pj-recrutement-et-conseil

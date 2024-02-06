@@ -2,19 +2,19 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: pj-formations
+  name: pj-recrutement-et-conseil
 spec:
   selector:
     matchLabels:
-      app: pj-formations
+      app: pj-recrutement-et-conseil
   template:
     metadata:
       labels:
-        app: pj-formations
+        app: pj-recrutement-et-conseil
     spec:
       containers:
-        - name: pj-formations
-          image: shokohsc/pj-formations
+        - name: pj-recrutement-et-conseil
+          image: shokohsc/pj-recrutement-et-conseil
           env:
             - name: ENV
               value: production

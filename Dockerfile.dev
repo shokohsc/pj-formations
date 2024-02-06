@@ -9,4 +9,4 @@ COPY . .
 COPY ./start-nginx.sh /usr/bin/start-nginx.sh
 RUN chmod +x /usr/bin/start-nginx.sh
 ENTRYPOINT [ "start-nginx.sh" ]
-CMD ["docs:dev"]
+CMD ["dev"]
