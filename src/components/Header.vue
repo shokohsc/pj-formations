@@ -1,56 +1,32 @@
 <template>
-  <nav class="navbar is-transparent is-fixed-top is-spaced" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-
-      <router-link class="navbar-item" to="/">
-        <button class="button">
-          <span class="icon">
-            <i class="fas fa-home"></i>
+  <div class="hero-head">
+    <header class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <router-link class="navbar-item has-text-black" to="/">
+            P&J
+          </router-link>
+          <span class="navbar-burger" data-target="navbar">
+            <span></span>
+            <span></span>
+            <span></span>
           </span>
-        </button>
-      </router-link>
-
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-
-    <div id="navbar" class="navbar-menu">
-
-      <div class="navbar-start">
-        <router-link class="navbar-item" to="/">
-          Accueil
-        </router-link>
-        <router-link class="navbar-item" to="/trainings">
-          Formations
-        </router-link>
-        <router-link class="navbar-item" to="/about">
-          About
-        </router-link>
-        <router-link class="navbar-item" to="/contact">
-          Contact
-        </router-link>
-      </div>
-
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <a href="tel:+33612345678">+33 6 12 34 56 78</a>
+        </div>
+        <div id="navbar" class="navbar-menu">
+          <div class="navbar-end">
+            <router-link class="navbar-item has-text-black" to="/contact">
+              Contact
+            </router-link>
+            <a class="navbar-item has-text-black" href="tel:+33 7 82 49 72 17">+33 7 82 49 72 17</a>
+          </div>
         </div>
       </div>
-
-    </div>
-  </nav>
+    </header>
+  </div>
 </template>
 
 <script setup>
-import getEnv from '../utils/env'
-
 import { onMounted } from 'vue'
-import { useRouter } from 'vue-router'
-
-const router = useRouter()
 
 onMounted(() => {
   document.addEventListener('DOMContentLoaded', () => {
@@ -69,19 +45,11 @@ onMounted(() => {
     })
   })
 })
+
 </script>
 
 <style scoped>
-/* nav.navbar {
-  background-color: #0a0a0a !important;
+.hero-head {
+  background-color: #219ebc;
 }
-.navbar-item {
-  background-color: #0a0a0a;
-}
-.navbar-menu {
-  background-color: #0a0a0a;
-}
-a.navbar-item:focus-within {
-  background-color: #0a0a0a !important;
-} */
 </style>

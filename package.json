@@ -21,5 +21,10 @@
     "vite-plugin-fonts": "^0.7.0",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
+  },
+  "dependencies": {
+    "sass": "^1.70.0",
+    "validator": "^13.11.0",
+    "vee-validate": "^4.12.5"
   }
 }

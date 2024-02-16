@@ -1,17 +1,29 @@
 <template>
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        <strong>PJ Formations</strong> by <a href="https://github.com/shokohsc">Dimitri Pommier</a>. The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-      </p>
-    </div>
-  </footer>
+  <div class="hero-foot">
+    <nav class="tabs is-boxed is-fullwidth">
+      <div class="container">
+        <ul>
+          <li>
+            <router-link class="has-text-black" to="/mentions-legales">
+              Mentions Légales
+            </router-link>
+          </li>
+          <li>
+            <router-link class="has-text-black" to="/termes-conditions">
+              Termes & Conditions
+            </router-link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </template>
 
 <script setup>
 </script>
 
 <style scoped>
+.hero-foot {
+  background-color: #219ebc;
+}
 </style>

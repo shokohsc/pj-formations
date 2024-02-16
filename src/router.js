@@ -1,6 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import Home from './components/Home.vue';
+import Contact from './components/Contact.vue';
+import Terms from './components/Terms.vue';
+import Legal from './components/Legal.vue';
+
+import Piste_Bagagiste from './components/Trainings/Piste_Bagagiste.vue';
 
 const routes = [
   {
@@ -8,11 +13,26 @@ const routes = [
     path: '/',
     component: Home
   },
-  // {
-  //   name: 'About',
-  //   path: '/about',
-  //   component: About
-  // },
+  {
+    name: 'Contact',
+    path: '/contact',
+    component: Contact
+  },
+  {
+    name: 'Terms',
+    path: '/termes-conditions',
+    component: Terms
+  },
+  {
+    name: 'Legal',
+    path: '/mentions-legales',
+    component: Legal
+  },
+  {
+    name: 'PisteBagagiste',
+    path: '/formation/piste-bagagiste',
+    component: Piste_Bagagiste
+  },
 ]
 
 const router = createRouter({
