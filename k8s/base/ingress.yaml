@@ -1,0 +1,17 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: pj-recrutement-et-conseil
+spec:
+  rules:
+  - host: pj-recrutement-et-conseil.cluster.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: pj-recrutement-et-conseil
+            port:
+              number: 80

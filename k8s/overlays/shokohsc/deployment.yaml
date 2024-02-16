@@ -1,0 +1,25 @@
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: pj-recrutement-et-conseil
+spec:
+  template:
+    spec:
+      containers:
+        - name: pj-recrutement-et-conseil
+          image: shokohsc/pj-recrutement-et-conseil
+          env:
+            - name: ENV
+              value: development
+            # - name: USE_SENTRY
+            #   value: "true"
+            - name: SENTRY_DSN
+              value: https://2f15ffed2e254ced911e78de9312afe0\@glitchtip.shokohsc.home/1
+          resources:
+            requests:
+              cpu: 10m
+              memory: 64M
+            limits:
+              cpu: 1000m
+              memory: 256M
