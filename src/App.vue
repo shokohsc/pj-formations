@@ -16,9 +16,14 @@ import 'virtual:fonts.css'
 
 <style>
 html {
-  background-color: #023047;
+  /* background-color: #023047; */
+  background-color: #FFF;
   height: 100vh;
   width: 100vw;
+}
+
+.text-color {
+  color: #383971 !important;
 }
 
 body {
@@ -31,7 +36,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.scrolling-image-container {
+/* .scrolling-image-container {
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -45,7 +50,7 @@ body::-webkit-scrollbar {
   width: 3840px;
   animation: slide 120s linear infinite;
   position: fixed;
-}
+} */
 
 @keyframes slide {
   0% {

@@ -49,7 +49,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.hero-head {
+/* .hero-head {
   background-color: #219ebc;
-}
+} */
 </style>

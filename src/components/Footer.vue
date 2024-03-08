@@ -23,7 +23,7 @@
 </script>
 
 <style scoped>
-.hero-foot {
+/* .hero-foot {
   background-color: #219ebc;
-}
+} */
 </style>

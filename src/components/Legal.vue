@@ -3,7 +3,7 @@
     <div class="container has-text-centered">
       <section class="section is-medium has-text-black">
         <div class="content">
-          <h1 class="has-text-black">Mentions légales</h1>
+          <h1 class="text-color">Mentions légales</h1>
           <p>Identité du propriétaire du site : PJ Recrutement et Conseil, 28, Avenue des Pépinières, 94260 Fresnes, 07 82 49 72 17, contact@pj-recrutement-conseil.com.</p>
           <p>Directeur de la publication : Gace Derby Jessy</p>
           <p>Hébergement du site : CLOUDFLARE FRANCE SAS</p>
@@ -26,7 +26,7 @@
 </script>
 
 <style scoped>
-section {
+/* section {
   background-color: #fb8500;
-}
+} */
 </style>

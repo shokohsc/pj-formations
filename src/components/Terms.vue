@@ -3,7 +3,7 @@
     <div class="container has-text-centered">
       <section class="section is-medium has-text-black">
         <div class="content">
-          <h1 class="has-text-black">Termes et conditions</h1>
+          <h1 class="text-color">Termes et conditions</h1>
           <p>Objet : Les présentes conditions générales de vente régissent les relations entre PJ Recrutement et Conseil et toute personne souhaitant acquérir des prestations de formation (ci-après dénommée « Stagiaire »).</p>
           <p>Formation proposées : PJ Recrutement et Conseil propose des prestations de formation dans les métier aéroportuaires et de sécurité. Les prestations sont décrites sur le site web pj-recrutement-conseil.com.</p>
           <p>Inscription : L’inscription se fait uniquement sur rendez-vous dans nos locaux au 28, Avenue des Pépinières, 94260 Fresnes. Le paiement de la formation doit être effectué avant le début de celle-ci.</p>
@@ -31,7 +31,7 @@
 </script>
 
 <style scoped>
-section {
+/* section {
   background-color: #fb8500;
-}
+} */
 </style>

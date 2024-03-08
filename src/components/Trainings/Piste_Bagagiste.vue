@@ -44,7 +44,7 @@
         </section>
 
         <section id="needed" class="section is-medium has-text-black">
-            <div class="content"><p class="title has-text-black">Pré-requis</p></div>
+            <div class="content"><p class="title text-color">Pré-requis</p></div>
             <div class="columns">
                 <div class="column is-one-fifth">
                     <div class="content">
@@ -105,8 +105,8 @@
 
         <section id="goals" class="section is-medium has-text-black">
             <div class="content">
-                <h1 class="has-text-black">Objectif de la formation</h1>
-                <h2 class="has-text-black">L'agent de piste bagagiste est responsable de la gestion efficace et sécurisée des bagages des passagers dans un aéroport.</h2>
+                <h1 class="text-color">Objectif de la formation</h1>
+                <h2 class="text-color">L'agent de piste bagagiste est responsable de la gestion efficace et sécurisée des bagages des passagers dans un aéroport.</h2>
                 <p>Appliquer les procédures de chargement et de déchargement des avions</p>
                 <p>Respecter les gestes et postures adéquates</p>
                 <p>Être en mesure de se déplacer sur un aéroport</p>
@@ -122,19 +122,19 @@
 
         <section id="content" class="section is-medium has-text-black">
             <div class="content">
-                <h1 class="has-text-black">Programme détaillé</h1>
-                <h2 class="has-text-black">Module 1: Environnement aéroportuaire</h2>
+                <h1 class="text-color">Programme détaillé</h1>
+                <h2 class="text-color">Module 1: Environnement aéroportuaire</h2>
                 <p>Description Métier</p>
                 <p>Réglementation du transport aérien</p>
                 <p>Différentes zones aéroportuaires et intervenants</p>
                 <p>Types d'avions</p>
-                <h2 class="has-text-black">Module 2: Procédures techniques</h2>
+                <h2 class="text-color">Module 2: Procédures techniques</h2>
                 <p>Chargement et déchargement bagage et fret</p>
                 <p>Les soutes et engins</p>
                 <p>Les types de marchandises</p>
                 <p>Le plan de chargement et les étiquettes bagages</p>
                 <p>Guidage avion et gestes conventionnels</p>
-                <h2 class="has-text-black">Module 3: Sûreté et sécurité</h2>
+                <h2 class="text-color">Module 3: Sûreté et sécurité</h2>
                 <p>Sûreté 11.2.3.8</p>
                 <p>Sûreté 11.2.3.9</p>
                 <p>Sûreté 11.2.6.2</p>
@@ -148,7 +148,7 @@
 
         <section id="methodology" class="section is-medium has-text-black">
             <div class="content">
-                <h1 class="has-text-black">Modalités pédagogiques</h1>
+                <h1 class="text-color">Modalités pédagogiques</h1>
                 <p>Exercices d’applications</p>
                 <p>Mises en situation et jeux de rôles</p>
                 <p>Vidéos</p>
@@ -165,7 +165,7 @@
 </script>
 
 <style scoped>
-#keypoints {
+/* #keypoints {
   background-color: #ffb703;
 }
 #needed {
@@ -179,5 +179,5 @@
 }
 #methodology {
   background-color: #ffb703;
-}
+} */
 </style>

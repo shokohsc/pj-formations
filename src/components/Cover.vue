@@ -1,9 +1,9 @@
 <template>
   <section class="section is-medium">
-    <p class="title">
+    <p class="title text-color">
       P&J Recrutement & Conseil
     </p>
-    <p class="subtitle">
+    <p class="subtitle text-color">
       Votre réussite nous importe
     </p>
   </section>
@@ -27,7 +27,7 @@
 </script>
 
 <style scoped>
-section {
+/* section {
   background-color: #ffb703;
-}
+} */
 </style>
